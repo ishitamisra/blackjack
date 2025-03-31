@@ -34,9 +34,11 @@ Using the Bellman equation we can compute: If I take action a from state s, I ge
 
  Learning Rate α was set to 0.01. I wanted to coverage to the best function gradually even if it required more training. 
 
+
 Discount Factor γ (0.15) A smaller discount factor  will have less significance when updating an action-state’s Q-value.
 
-[insert Bellman equation image]
+
+![Bellman](./bellman.png)
 
 # Results
 
@@ -45,6 +47,7 @@ By 1,000,000 training iterations, the Q-learning policy and the basic strategy b
 
 Overall, the action-state pair
 s in both strategies are almost identical, which means the agent’s policy function effectively reflects the optimal move. 
+
 
 [insert basic strategy policy map]
 
