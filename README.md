@@ -1,22 +1,13 @@
-# Blackjack Agent
-
-Yes
-
-This is my reinforcement learning (RL) project -- an agent that learns to play blackjack with the most optimal strategy.
-I'm using the OpenAI Gym environment for gameplay stimulation. 
-
-
-
-
-# Blackjack Agent
-
 This is my reinforcement learning (RL) project -- an agent that learns to play blackjack with the most optimal strategy. The OpenAI Gym environment was used for gameplay stimulation. 
+
+# Blackjack Agent
+This is my reinforcement learning (RL) project -- an agent that learns to play blackjack with the most optimal strategy. The OpenAI Gym environment was used for gameplay stimulation.
 
 
 #Background
 The most famous casino game Blackjack has one of the lowest house edges of any casino game, making it very attractive to players. I wanted to test the Q-learning algorithm to train a reinforcement learning model to learn the best possible move to make given a player’s hand and a dealer’s hand.
-
-![Blackjack Card Values](card_values.png)
+)
+![Card Values](./card_values.png)
 
 #Method
 I implemented a Q-learning algorithm to determine an optimal policy for playing Blackjack. Through probability theory and millions of stimulations, a basic Black strategy has been computed for every possible hand. As my benchmark, I compared my Q-learning policy with this strategy (also labeled Basic Blackjack Strategy).
@@ -54,6 +45,7 @@ Overall, the action-state pairs in both strategies are almost identical, which m
 
 
 [insert q srategy policy map]
+
 
 
 
