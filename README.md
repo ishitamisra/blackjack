@@ -20,6 +20,7 @@ OpenAI’s blackjack game is played using an infinite deck, meaning that as card
 Action Set: There are 32 possible player hand combinations, 11 possible dealer values, and an usuable vs usable aces. Thus, there are 32 x 11 x 2 total states possible. 
 The objective is to define a policy function Q(s,a) such that for any possible state, we pick an action (a) that  maximizes future rewards.
 
+![Algorithm](./q-learning.png)
 Using the Bellman equation we can compute: If I take action a from state s, I get some immediate reward r, and potentially some future reward — which I estimate by looking at the best move I could make in the next game state.
 
 [insert image
@@ -40,7 +41,8 @@ Discount Factor γ (0.15) A smaller discount factor  will have less significance
 After around 20,000 training iterations, my model reached convergence to the basic strategy 
 By 1,000,000 training iterations, the Q-learning policy and the basic strategy began to score quite similarly, with a slightly negative expected reward of approximately -0.05 (negative due to the guaranteed house edge).
 
-Overall, the action-state pairs in both strategies are almost identical, which means the agent’s policy function effectively reflects the optimal move. 
+Overall, the action-state pair
+s in both strategies are almost identical, which means the agent’s policy function effectively reflects the optimal move. 
 
 [insert basic strategy policy map]
 
