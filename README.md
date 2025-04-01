@@ -25,7 +25,6 @@ The objective is to define a policy function Q(s,a) such that for any possible s
 
 Using the Bellman equation we can compute: If I take action a from state s, I get some immediate reward r, and potentially some future reward — which I estimate by looking at the best move I could make in the next game state.
 
-[insert image
 
 # Hyperparameter Tuning
  Epsilon Greedy ε: At each state, I decide what action to take (hit or stand). I compare my Q values for both actions. Usually, we take the action with the greatest Q value. However, in the first few iterations, it can be more beneficial to explore as Q-values  So to encourage my agent to explore options, ε value is used. Higher ε: exploration is encouraged. Lower ε: exploitation is encouraged.
@@ -48,12 +47,10 @@ By 1,000,000 training iterations, the Q-learning policy and the basic strategy b
 Overall, the action-state pair
 s in both strategies are almost identical, which means the agent’s policy function effectively reflects the optimal move. 
 
+# Basic Strategy
+![Basic Strategy](./basic_strat.png)
 
-[insert basic strategy policy map]
-
-
-[insert q srategy policy map]
-
-
+# Q-Learning Strategy
+![Q-learning Strategy](./q_strat.png)
 
 
